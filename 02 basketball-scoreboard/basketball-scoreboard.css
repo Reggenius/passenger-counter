@@ -1,0 +1,141 @@
+html, body {
+    background-color: rgb(0, 0, 1);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 1px 20px rgb(154 150 150);
+}
+
+.container .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h3 {
+    color: white;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 35.89px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .score-container {
+    width: 165px;
+    height: 120px;
+    background-color: #080001;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.container .score-container p {
+    font-family: 'Cursed Timer ULiL', sans-serif;;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 126.67px;
+    text-align: center;
+    color: #F94F6D;
+    margin: 0;
+}
+
+.container .col .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.container .buttons button {
+    background-color: #1B244A;
+    border: 1px solid #9AABD8;
+    color: #9AABD8;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.container .buttons button:hover {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(167, 163, 163);
+    font-style: italic;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        border-radius: 0;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+        padding: 30px 20px;
+        box-shadow: none;
+    }
+
+    .container h3 {
+        font-size: 25px;
+    }
+
+    .container .score-container {
+        width: unset;
+        height: unset;
+    }
+
+    .container .score-container p {
+        font-size: 45px;
+        line-height: 86.67px;
+        width: 120px;
+    }
+
+    .container .buttons {
+        width: 100px;
+    }
+
+    .container .buttons button {
+        width: 35px;
+        height: 35px;
+        margin: 0 3px;
+        font-size: 15px;
+    }
+}

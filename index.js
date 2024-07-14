@@ -1,15 +1,5 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+const projURL = ["03 password-generator/password-generator.html", "02 basketball-scoreboard/basketball-scoreboard.html", "01 passenger-counter-app/passenger-counter-app.html"];
 
-function increment() {
-    count += 1
-    countEl.textContent = count
-}
-
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
+function redirectToProj(arrIndex) {
+    window.location.href = projURL[arrIndex];
 }

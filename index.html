@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechUp Africa | Task 01 | Reggenius</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <title>TechUp Africa | Reggenius</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <p id="save-el">Previous entries: </p>
+        <header class="heading">
+                <h1>TechUp Africa AI Engineering Cohort</h1>
+                <h2>Javascript Pre-requisite Course, Demo Projects</h2>
+        </header>
+        <div class="project-grid">
+            <div class="project" id="password" onclick="redirectToProj(0)">
+                <img src="images/password.png" alt="">
+                <p class="overlay">VIEW PROJECT</p>
+            </div>
+            <div class="project" id="basketball" onclick="redirectToProj(1)">
+                <img src="images/basketball.png" alt="">
+                <p class="overlay">VIEW PROJECT</p>
+            </div>
+            <div class="project" id="passenger" onclick="redirectToProj(2)">
+                <img src="images/passenger.png" alt="">
+                <p class="overlay">VIEW PROJECT</p>
+            </div>
+        </div>
     </div>
-    <footer>
-        <p>Reggenius</p>
-    </footer>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

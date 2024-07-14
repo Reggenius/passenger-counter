@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechUp Africa | Task 02 | Reggenius - Basketball Scoreboard</title>
+
+    <link rel="stylesheet" href="./basketball-scoreboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h3>HOME</h3>
+            <div class="score-container">
+                <p id="home-score">0</p>
+            </div>
+            <div class="buttons">
+                <button onclick="addHome(1)">+1</button>
+                <button onclick="addHome(2)">+2</button>
+                <button onclick="addHome(3)">+3</button>
+            </div>
+        </div>
+        <div class="col">
+            <h3>GUEST</h3>
+            <div class="score-container">
+                <p id="guest-score">0</p>
+            </div>
+            <div class="buttons">
+                <button onclick="addGuest(1)">+1</button>
+                <button onclick="addGuest(2)">+2</button>
+                <button onclick="addGuest(3)">+3</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Reggenius</p>
+    </footer>
+    <script src="./basketball-scoreboard.js"></script>
+</body>
+</html>
