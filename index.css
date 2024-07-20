@@ -30,7 +30,7 @@ body {
         "password password basketball"
         "password password converter"
         "passenger passenger converter"
-        "extension extension app"
+        "passenger passenger app"
         "extension extension app";
         gap: 16px;
         width: 100%;
@@ -122,7 +122,20 @@ body {
         "password password"
         "basketball passenger"
         "converter converter"
-        "extension app";
+        "extension extension"
+        "app app";
+    }
+
+    #app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        box-sizing: border-box;
+    }
+
+    #app img {
+        object-fit: contain;
     }
 }
 
