@@ -13,7 +13,7 @@ function redirectToProj(arrIndex) {
 }
 
 function editImgUrl(el, url) {
-    converterImg.setAttribute("src", url);
+    el.setAttribute("src", url);
 }
 
 if (window.innerWidth <= 1100) {
