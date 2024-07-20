@@ -29,7 +29,9 @@ body {
     grid-template-areas: 
         "password password basketball"
         "password password converter"
-        "passenger passenger converter";
+        "passenger passenger converter"
+        "extension extension app"
+        "extension extension app";
         gap: 16px;
         width: 100%;
 }
@@ -48,6 +50,14 @@ body {
 
 #passenger {
     grid-area: passenger;
+}
+
+#extension {
+    grid-area: extension;
+}
+
+#app {
+    grid-area: app;
 }
 
 .project {
@@ -111,7 +121,8 @@ body {
         grid-template-areas: 
         "password password"
         "basketball passenger"
-        "converter converter";
+        "converter converter"
+        "extension app";
     }
 }
 
@@ -135,7 +146,9 @@ body {
         "password password"
         "basketball basketball"
         "passenger passenger"
-        "converter converter";
+        "converter converter"
+        "extension extension"
+        "app app";
         margin-top: 40px;
     }
     .project .overlay {
