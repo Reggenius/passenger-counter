@@ -82,10 +82,6 @@ button:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 60px; */
     box-sizing: border-box;
 }
 
